@@ -4,6 +4,8 @@
 
 ## 主要功能
 
+> cnpm i bootstrap popper --save-dev  //引入bootstrap需要安装
+
 > 能够打包成多个html文件和js文件，即支持多入口
 
 > 文件名称都会带上hash值，解决缓存问题

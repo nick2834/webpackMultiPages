@@ -15,6 +15,6 @@ module.exports=merge(common,{
         }),
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new OpenBrowserPlugin({ url: 'http://localhost:5000' })
+        new OpenBrowserPlugin({ url: 'http://localhost:3000' })
     ],
 })

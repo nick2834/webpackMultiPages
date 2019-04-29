@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="测试,测试123">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>测试</title>
 </head>
+
 <body>
-<!--引入通用的导航部分-->
-<%=require('html-withimg-loader!../../html/tpl/navbar.html')%>
+    <!--引入通用的导航部分-->
+    <div class="header">
+        <%=require('html-withimg-loader!../../common/header.html')%>
+    </div>
 
-<!--页面的正式内容在这里-->
-<div id="app">
-    测试页面的内容在这里
-</div>
+    <!--页面的正式内容在这里-->
+    <div id="app">
+        测试页面的内容在这里
+    </div>
 
-<!--引入通用的底部栏-->
-<%=require('html-withimg-loader!../../html/tpl/footer.html')%>
+    <!--引入通用的底部栏-->
+    <div class="footer">
+        <%=require('html-withimg-loader!../../common/footer.html')%>
+    </div>
 </body>
+
 </html>

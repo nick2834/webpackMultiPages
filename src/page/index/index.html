@@ -14,43 +14,93 @@
 
     <!-- 顶部通栏 -->
     <div class="header">
-        <%=require('html-withimg-loader!../../html/tpl/navbar.html')%>
+        <%=require('html-withimg-loader!../../common/header.html')%>
     </div>
     <!--页面的正式内容在这里-->
-    <div id="app">
-        <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <!-- 桌面视口的 轮播图 组件 -->
+                    <a href="solution/optical_module.html" class="banner_a image_1 hidden-xs">
+                        <div class="carousel-caption hidden-xs">
+                            
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!-- 桌面视口的 轮播图 组件 -->
+                    <a href="solution/cabling_system.html" class="banner_a image_2 hidden-xs">
+                        <div class="carousel-caption hidden-xs">
+                            
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="solution/switches.html" class="banner_a image_3 hidden-xs">
+                        <div class="carousel-caption hidden-xs">
+                            
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-        </div>
-        <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-        </div>
-        <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-        </div>
-        <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+
+        <!-- 手机端轮播图 -->
+        <!-- Swiper -->
+        <div class="swiper-container visible-xs">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="feisu-solution.html#page1" class="mobile_a">
+                        <img src="<%= require('../../images/banner/u44.jpg') %>" alt="01">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="feisu-solution.html#page2" class="mobile_a">
+                        <img src="<%= require('../../images/banner/u44.jpg') %>" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="feisu-solution.html#page3" class="mobile_a">
+                        <img src="<%= require('../../images/banner/u44.jpg') %>" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
         </div>
     </div>
 
     <!--引入通用的底部栏-->
     <!-- 底栏 -->
     <div class="footer">
-        <%=require('html-withimg-loader!../../html/tpl/footer.html')%>
+        <%=require('html-withimg-loader!../../common/footer.html')%>
     </div>
 
 </body>
-
 </html>

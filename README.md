@@ -22,9 +22,6 @@
 
 > build能够对代码进行压缩
 
-## 相关介绍文章
-[http://shanhuxueyuan.com/news/detail/83.html](http://shanhuxueyuan.com/news/detail/83.html)
-
 ## 下载使用
 
 ``` bash

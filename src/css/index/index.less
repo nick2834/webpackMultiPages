@@ -1,64 +1,81 @@
-
 /* 轮播图样式 */
-.banner{
-	margin-top: 61px;
-	@media (max-width: 767px){margin-top: 51px;}
-	.banner_a{
-		height: 420px;
+.banner {
+	margin-top: 84px;
+
+	@media (max-width: 767px) {
+		margin-top: 51px;
+	}
+
+	.banner_a {
+		height: 700px;
 		-webkit-background-size: cover;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		display: block;
-		&.image_1{
+
+		&.image_1 {
 			background-image: url(../../images/banner/u44.jpg);
 		}
-		&.image_2{
+
+		&.image_2 {
 			background-image: url(../../images/banner/u44.jpg);
 		}
-		&.image_3{
+
+		&.image_3 {
 			background-image: url(../../images/banner/u44.jpg);
 		}
-		&.image_4{
+
+		&.image_4 {
 			background-image: url(../../images/banner/u44.jpg);
 		}
-	}	
-	.carousel-control.left,{
-		background-image: linear-gradient(to right,rgba(255,255,255,.3) 0,rgba(255,255,255,.0001) 100%);		
 	}
-	.carousel-control.right,{
-		background-image: linear-gradient(to left,rgba(255,255,255,.3) 0,rgba(255,255,255,.0001) 100%);		
+
+	.carousel-control.left {
+		background-image: linear-gradient(to right, rgba(255, 255, 255, .3) 0, rgba(255, 255, 255, .0001) 100%);
 	}
+
+	.carousel-control.right {
+		background-image: linear-gradient(to left, rgba(255, 255, 255, .3) 0, rgba(255, 255, 255, .0001) 100%);
+	}
+
 	.carousel-control .glyphicon-chevron-left,
-	.carousel-control .glyphicon-chevron-right{
-		color: rgba(255,255,255,0.8);
+	.carousel-control .glyphicon-chevron-right {
+		color: rgba(255, 255, 255, 0.8);
 	}
-	.carousel-caption{
+
+	.carousel-caption {
 		width: 580px;
 		text-align: left;
 		left: 15%;
-		top: 125px;		
+		top: 125px;
 		text-shadow: none;
-		h2{
+
+		h2 {
 			font-size: 34px;
 			margin-bottom: 20px;
-			line-height: 1.3;			
+			line-height: 1.3;
 		}
-		p{
+
+		p {
 			font-size: 16px;
 			font-weight: 300;
 		}
-		&.black{
+
+		&.black {
 			color: #333;
-			p{
-				color:#666;
+
+			p {
+				color: #666;
 			}
 		}
 	}
-	.carousel-indicators{
+
+	.carousel-indicators {
 		bottom: 0px;
 	}
-	.carousel-indicators li{
+
+	.carousel-indicators li {
 		width: 9px;
 		height: 9px;
 		border-radius: 50%;
@@ -66,26 +83,131 @@
 	}
 
 	/* 专门为移动端 准备的 轮播图组件 */
-	.mobile_a{
+	.mobile_a {
 		display: block;
 		width: 100%;
-		img{
+
+		img {
 			display: block;
 			width: 100%;
 		}
 	}
-	.swiper-pagination-bullet{
+
+	.swiper-pagination-bullet {
 		// border: 1px solid #fff;
 		opacity: 0.3;
 		background-color: #fff;
 	}
-	.swiper-pagination-bullet-active{
+
+	.swiper-pagination-bullet-active {
 		opacity: 0.95;
 		background-color: #fff;
 	}
 }
 
-// /* 我们是谁 区域样式 */
+// /* News */
+.news {
+	padding: 50px 0;
+	
+	@media (max-width: 767px) {
+		padding: 0;
+
+		h2 {
+			font-size: 24px;
+			padding-top: 25px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+}
+// /* product */
+.product {
+	padding: 50px 0;
+	background-color: whitesmoke;
+	@media (max-width: 767px) {
+		padding: 0;
+
+		h2 {
+			font-size: 24px;
+			padding-top: 25px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+}
+// /* technolog */
+.technolog {
+	padding: 50px 0;
+	.technolog__content{
+		// overflow: hidden;
+	}
+	.tech-item{
+		height: 300px;
+		// box-shadow: 10px 10px 10px #c8c8c8;
+		.tech-item__header{
+			height: 150px;
+			background: #666666;
+		}
+		.tech-item__footer{
+			height: 150px;
+			background: #c8c8c8;
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 0;
+
+		h2 {
+			font-size: 24px;
+			padding-top: 25px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+}
+// /* partner */
+.partner {
+	padding: 50px 0;
+	background-color: whitesmoke;
+	.partner_items{
+		padding: 10px;
+		border-radius: 20px;
+		background: #ffffff;
+		box-shadow: 0 10px 10px #666666;
+		margin-bottom: 20px;
+		min-height: 100px;
+		cursor: pointer;
+	}
+	@media (max-width: 767px) {
+		padding: 0;
+		.partner_items{
+			margin-bottom: 0;
+			box-shadow: unset;
+			border-radius: 0;
+		}
+		h2 {
+			font-size: 24px;
+			padding-top: 25px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+}
 // .about_us{
 // 	// background-color: rgb(242,242,242);
 // 	// box-shadow: 0 4px 50px rgba(0,0,0,0.18);
@@ -227,7 +349,7 @@
 // 						background-color: #2095c5;
 // 						color: #fff;
 // 					}
-					
+
 // 				}
 // 				&.active a{
 // 					// background-color: #5d95c8;					
@@ -537,7 +659,7 @@
 // 			}			
 // 		}
 // 	}
-	
+
 // 	@media (max-width: 767px){
 // 		h2{
 // 			font-size: 24px;

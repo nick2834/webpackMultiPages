@@ -5,13 +5,12 @@
     width: 100%;
     z-index: 1000;
     // opacity: 0.9;
-    background-color: rgba(248, 248, 248, 0.95);
+    background-color: #0052d9;
     box-shadow: 0 1px 8px #d4d4d4;
-
+    
     .fs_navbar {
         position: relative;
-        // background-color: #f8f8f8;
-        // border-color: #e7e7e7;
+        height: 84px;
         border: none;
         border-bottom: 1px solid #e7e7e7;
         border-radius: 0;
@@ -19,7 +18,7 @@
 
         .container-fluid {
             max-width: 1200px;
-
+            height: inherit;
             .navbar-header {
                 margin: 0;
             }
@@ -29,16 +28,16 @@
     .fs_navbar .navbar-brand {
         display: block;
         float: left;
-        width: 150px;
+        width: 205px;
         height: 40px;
         padding: 0;
-        margin: 10px 0 10px 16px;
-        // background: url(../images/header_LOGO.svg) no-repeat;
+        margin: 20px 0 20px 16px;
+        background: url(../../images/logo.png) no-repeat center;
     }
 
     .fs_navbar .navbar-brand:hover,
     .fs_navbar .navbar-brand:focus {
-        color: #5e5e5e;
+        color: #ffffff;
         background-color: transparent;
     }
 
@@ -47,11 +46,12 @@
     }
 
     .fs_navbar .navbar-nav>li>a {
-        color: #444;
+        color: #ffffff;
         font-size: 16px;
-        padding: 20px 15px;
+        padding: 20px;
         margin: 0 5px;
-        height: 60px;
+        height: 84px;
+        line-height: 44px;
     }
 
     .fs_navbar .navbar-nav>li>a:focus {
@@ -61,16 +61,16 @@
     }
 
     .fs_navbar .navbar-nav>li>a:hover {
-        color: #000;
+        // color: #000;
         background-color: transparent;
-        border-bottom: 2px solid #555;
+        border-bottom: 2px solid #ffffff;
     }
 
     .fs_navbar .navbar-nav>.active>a,
     .fs_navbar .navbar-nav>.active>a:hover,
     .fs_navbar .navbar-nav>.active>a:focus {
-        color: #0086da;
-        border-bottom: 2px solid #0086da;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
         // background-color: #e7e7e7;
     }
 
@@ -118,6 +118,7 @@
     .fs_navbar .navbar-collapse,
     .fs_navbar .navbar-form {
         border-color: #e7e7e7;
+        height: 84px;
     }
 
     .fs_navbar .navbar-collapse {
